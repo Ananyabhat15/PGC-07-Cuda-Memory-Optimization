@@ -86,9 +86,9 @@ nvcc --version
 
 `nvidia-smi` shows the GPU name, driver version and CUDA version; `nvcc --version` shows the CUDA compiler version.
 
-> 📸 **Screenshot: environment check (`nvidia-smi` and `nvcc --version`)**
->
-> ![Environment check](screenshots/01_environment_check.png)
+> 📸 **Screenshot: environment check **
+<img width="1600" height="900" alt="WhatsApp Image 2026-11-20 at 10 04 27 AM" src="https://github.com/user-attachments/assets/d0d83a98-1936-46eb-9e33-0abed753ef6f" />
+
 
 ### 3.3 Create the working folder
 
@@ -358,9 +358,7 @@ On Linux / Colab:
 nvcc -O2 -o exp6 exp6.cu
 ```
 
-> 📸 **Screenshot: first compile error and the successful `-arch=sm_120` build**
->
-> ![Compile error and fix](screenshots/02_compile_error_and_fix.png)
+
 
 ### 6.2 Run
 
@@ -372,8 +370,8 @@ exp6.exe 2048 512        :: optional: transpose N=2048, matmul N=512
 The program was run **three times**; the first run after loading the GPU can be slightly slower, so the repeated values are the more reliable ones.
 
 > 📸 **Screenshot: three program runs**
->
-> ![Program output](screenshots/03_program_output_runs.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-11-20 at 10 04 42 AM" src="https://github.com/user-attachments/assets/a153a392-742b-4b16-9945-e230f3df6547" />
+
 
 ---
 
