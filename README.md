@@ -421,6 +421,9 @@ Naive matmul          : 1.385 ms
 
 *(Values are averages of three runs. Run 1 was the slowest uncoalesced run, consistent with the manual's note that the first run can be slightly slower.)*
 
+<img width="1600" height="1000" alt="transpose_bandwidth" src="https://github.com/user-attachments/assets/cf83a9a0-9360-4052-a066-2b98bac80209" />
+
+
 ### 7.4 Sanity check of the formulas
 
 For N = 4096 the matrix holds 4096 × 4096 × 4 B = 67,108,864 B. One read plus one write moves 134,217,728 B, so at 0.415 ms the coalesced kernel reaches 134,217,728 / (0.415 × 10⁶) ≈ **323.4 GB/s**, matching the printed value. For the matmul, 2 × 1024³ ≈ 2.147 × 10⁹ operations in 1.385 ms gives ≈ **1550 GFLOPS**, also matching.
