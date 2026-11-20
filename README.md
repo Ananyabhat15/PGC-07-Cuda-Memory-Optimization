@@ -7,7 +7,7 @@ Coalesced vs. uncoalesced global-memory access, naive matrix multiplication, and
 ## Table of Contents
 
 1. [Aim](#1-aim)
-2. [Theory (Short)](#2-theory-short)
+2. [Theory](#2-theory)
 3. [Environment and Setup](#3-environment-and-setup)
 4. [Project Structure](#4-project-structure)
 5. [Implementation](#5-implementation)
@@ -28,7 +28,7 @@ To study how the global-memory access pattern of a CUDA kernel affects its perfo
 
 ---
 
-## 2. Theory (Short)
+## 2. Theory
 
 ### 2.1 Memory coalescing
 
